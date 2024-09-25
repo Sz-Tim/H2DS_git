@@ -14,6 +14,13 @@ Each *commit* is required to have a message that should briefly describe what ch
 
 RStudio is built to integrate nicely with git and GitHub. If you work regularly in R, it is a good idea to use these capabilities. There are fairly clear guides available online (e.g., [Happy git with R](https://happygitwithr.com/) or [R for the rest of us](https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r/)).
 
+## Anatomy of a repo
+
+In addition to the regular files (e.g., those in a `code` or `data` folder), git repositories typically have:
+- .gitignore: Lists files or folders to ignore
+- README.md: Description of the repo in markdown format. Displayed automatically on GitHub (i.e., this text is all in README.md)
+- LICENSE: Encouraged by the GitHub interface detailing how you can use the repo
+
 ## Download this repo
 
 To download a copy of this repository, click the green "Code" button on the [GitHub repo](Sz-Tim/H2DS_git: Illustration of git and GitHub for H2 Data Science), then 'Download ZIP'. This will download the folder to your computer as "H2DS_git-main.zip". Note that this is a copy of the repo – it is no longer connected to the original repo and changes will not be tracked.
