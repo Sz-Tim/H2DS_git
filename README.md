@@ -23,7 +23,7 @@ In addition to the regular files (e.g., those in a `code` or `data` folder), git
 
 ## Download this repo
 
-To download a copy of this repository, click the green "Code" button on the [GitHub repo](Sz-Tim/H2DS_git: Illustration of git and GitHub for H2 Data Science), then 'Download ZIP'. This will download the folder to your computer as "H2DS_git-main.zip". Note that this is a copy of the repo – it is no longer connected to the original repo and changes will not be tracked.
+To download a copy of this repository, click the green "Code" button on the [GitHub repo](https://github.com/Sz-Tim/H2DS_git: Illustration of git and GitHub for H2 Data Science), then 'Download ZIP'. This will download the folder to your computer as "H2DS_git-main.zip". Note that this is a copy of the repo – it is no longer connected to the original repo and changes will not be tracked.
 
 Then, find the file on your computer, drag it to a suitable location, and then right click it and extract it.
 
