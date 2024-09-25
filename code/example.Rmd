@@ -1,0 +1,52 @@
+---
+title: "Rmarkdown practice"
+author: "H2 Data Science"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, 
+                      root.dir = rprojroot::find_rstudio_root_file())
+```
+
+Congratulations! You've successfully downloaded a repository from GitHub!
+
+Now it's time to practice some R Markdown. R Markdown is an extension of Markdown (a text-based way to format documents) that can embed R code, R output, and R plots. An R Markdown document can be rendered into a clean report in, e.g., PDF or HTML format.
+
+For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+You can toggle back and forth between the Source (the plain text) and the Visual (formatted) views at the top of the file in RStudio.
+
+# Adding R chunks
+
+R code can be inserted in 'code chunks'. Move your cursor to the space below, then click the 'insert code chunk' icon at the top right of this Rmd: it is a green square with a 'c' and a '+'. Select 'R' if you get the option.
+
+In your new code chunk, write code to make a plot using the `iris` dataset.
+
+**Add a code chunk on the next line:**
+
+When working in a .Rmd, you can run lines of code with ctrl+enter (Mac: command+enter). This runs the lines individually and may re-set plotting parameters (e.g., `par(mfrow=...))`. To run the whole chunk at once, click the green arrow on the right side of the chunk, or use ctrl+shift+enter.
+
+# R Markdown and directories
+
+Rmd files can be fiddly with working directories. For our purposes, it is best to always use the project directory as the working directory.
+
+On the top toolbar, click *Tools \> Global options...* and then click on the *R Markdown* tab on the left. Set 'Evaluate chunks in directory:' to 'Project'.
+
+Click OK.
+
+Create a new R chunk below and try loading the file `data/trees.csv`. If it loads without an error, then the working directory is set to the project directory.
+
+# Knitting
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+Try clicking **Knit** at the top of this document. If you get an error, you may need to first run this in R:
+
+```{r}
+# tinytex::install_tinytex()
+```
+
+If you get an error related to the `data/trees.csv` location, then the **Knit** button is using the wrong working directory (i.e., it is using the `code` folder where this .Rmd is located). If your RStudio version has a drop down menu on the **Knit** button, click it, select 'Knit Directory', and set it to 'Project Directory'. If you do not have that option, you can add `knitr::opts_chunk$set(root.dir = rprojroot::find_rstudio_root_file())` to the first `setup` code chunk at the top of the Rmd file.
+
+Once you have successfully knitted your document, you will see `code/example.pdf` in your files.
